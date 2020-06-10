@@ -193,6 +193,12 @@ NSString *const SRHTTPResponseErrorKey = @"HTTPResponseStatusCode";
         BOOL certificateChainValidationEnabled = !allowsUntrustedSSLCertificates;
         securityPolicy = [[SRSecurityPolicy alloc] initWithCertificateChainValidationEnabled:certificateChainValidationEnabled];
     }
+    
+    NSData *clientCertificate = request.SR_SSLClientCertificate;
+    
+    if (clientCertificate) {
+        securityPolicy.SR_SSLClientCertificate = clientCertificate;
+    }
 
     return [self initWithURLRequest:request protocols:protocols securityPolicy:securityPolicy];
 }

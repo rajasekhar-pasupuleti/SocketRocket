@@ -18,6 +18,8 @@ void import_NSURLRequest_SRWebSocket() { }
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const SRSSLPinnnedCertificatesKey = @"SocketRocket_SSLPinnedCertificates";
+static NSString *const SRSSLClientCertificatesKey = @"SocketRocket_SSLClientCertificate";
+
 
 @implementation NSURLRequest (SRWebSocket)
 
@@ -26,6 +28,10 @@ static NSString *const SRSSLPinnnedCertificatesKey = @"SocketRocket_SSLPinnedCer
     return [NSURLProtocol propertyForKey:SRSSLPinnnedCertificatesKey inRequest:self];
 }
 
+- (nullable NSData *)SR_SSLClientCertificate
+{
+    return [NSURLProtocol propertyForKey:SRSSLClientCertificatesKey inRequest:self];
+}
 @end
 
 @implementation NSMutableURLRequest (SRWebSocket)
@@ -39,6 +45,19 @@ static NSString *const SRSSLPinnnedCertificatesKey = @"SocketRocket_SSLPinnedCer
 {
     [NSURLProtocol setProperty:[SR_SSLPinnedCertificates copy] forKey:SRSSLPinnnedCertificatesKey inRequest:self];
 }
+
+//Client
+- (nullable NSData *)SR_SSLClientCertificate
+{
+    return [NSURLProtocol propertyForKey:SRSSLClientCertificatesKey inRequest:self];
+}
+
+
+- (void)setSR_SSLClientCertificate:(nullable NSData *)SR_SSLClientCertificate {
+    [NSURLProtocol setProperty:[SR_SSLClientCertificate copy] forKey:SRSSLClientCertificatesKey inRequest:self];
+}
+
+
 
 @end
 

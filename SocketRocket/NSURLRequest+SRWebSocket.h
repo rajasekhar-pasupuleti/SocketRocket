@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of pinned `SecCertificateRef` SSL certificates that `SRWebSocket` will use for validation.
  */
 @property (nullable, nonatomic, copy, readonly) NSArray *SR_SSLPinnedCertificates;
+@property (nullable, nonatomic, copy, readonly) NSData *SR_SSLClientCertificate;
 
 @end
 
@@ -28,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  An array of pinned `SecCertificateRef` SSL certificates that `SRWebSocket` will use for validation.
  */
 @property (nullable, nonatomic, copy) NSArray *SR_SSLPinnedCertificates;
+@property (nullable, nonatomic, copy) NSData *SR_SSLClientCertificate;
 
 @end
 
