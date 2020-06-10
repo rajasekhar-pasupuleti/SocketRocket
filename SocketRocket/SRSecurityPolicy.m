@@ -62,20 +62,22 @@ static NSString *const SRSSLClientCertificatesKey = @"SocketRocket_SSLClientCert
     // Import client Certificate
     
     NSData *clientCertificate = _SR_SSLClientCertificate;
+    NSString *password = _SR_SSLClientCertificatePassword;
     
-    if (clientCertificate) {
+    if (clientCertificate && password) {
        
         // Import .p12 data
         CFArrayRef keyref = NULL;
         OSStatus sanityChesk = SecPKCS12Import((__bridge CFDataRef)clientCertificate,
                                                (__bridge CFDictionaryRef)[NSDictionary
-                                                                          dictionaryWithObject: @"CSyXr3C05AWS"
+                                                                          dictionaryWithObject: password
                                                                           forKey:(__bridge id)kSecImportExportPassphrase],
                                                &keyref);
         if (sanityChesk != noErr) {
-            NSLog(@"Error while importing pkcs12 [%d]", (int)sanityChesk);
+            NSLog(@"Error while importing client certificate [%d]", (int)sanityChesk);
+            return;
         } else
-          NSLog(@"Success opening p12 certificate.");
+          NSLog(@"Success opening client certificate.");
 
         // Identity
         CFDictionaryRef identityDict = CFArrayGetValueAtIndex(keyref, 0);

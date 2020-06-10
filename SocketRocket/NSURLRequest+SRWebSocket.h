@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable, nonatomic, copy, readonly) NSArray *SR_SSLPinnedCertificates;
 @property (nullable, nonatomic, copy, readonly) NSData *SR_SSLClientCertificate;
+@property (nullable, nonatomic, copy, readonly) NSString *SR_SSLClientCertificatePassword;
 
 @end
 
@@ -30,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nullable, nonatomic, copy) NSArray *SR_SSLPinnedCertificates;
 @property (nullable, nonatomic, copy) NSData *SR_SSLClientCertificate;
+@property (nullable, nonatomic, copy) NSString *SR_SSLClientCertificatePassword;
 
 @end
 

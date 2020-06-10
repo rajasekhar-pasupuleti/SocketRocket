@@ -18,7 +18,8 @@ void import_NSURLRequest_SRWebSocket() { }
 NS_ASSUME_NONNULL_BEGIN
 
 static NSString *const SRSSLPinnnedCertificatesKey = @"SocketRocket_SSLPinnedCertificates";
-static NSString *const SRSSLClientCertificatesKey = @"SocketRocket_SSLClientCertificate";
+static NSString *const SRSSLClientCertificateKey = @"SocketRocket_SSLClientCertificate";
+static NSString *const SRSSLClientCertificatePasswordKey = @"SocketRocket_SSLClientCertificatePassword";
 
 
 @implementation NSURLRequest (SRWebSocket)
@@ -30,7 +31,12 @@ static NSString *const SRSSLClientCertificatesKey = @"SocketRocket_SSLClientCert
 
 - (nullable NSData *)SR_SSLClientCertificate
 {
-    return [NSURLProtocol propertyForKey:SRSSLClientCertificatesKey inRequest:self];
+    return [NSURLProtocol propertyForKey:SRSSLClientCertificateKey inRequest:self];
+}
+
+- (nullable NSString *)SR_SSLClientCertificatePassword
+{
+    return [NSURLProtocol propertyForKey:SRSSLClientCertificatePasswordKey inRequest:self];
 }
 @end
 
@@ -49,12 +55,21 @@ static NSString *const SRSSLClientCertificatesKey = @"SocketRocket_SSLClientCert
 //Client
 - (nullable NSData *)SR_SSLClientCertificate
 {
-    return [NSURLProtocol propertyForKey:SRSSLClientCertificatesKey inRequest:self];
+    return [NSURLProtocol propertyForKey:SRSSLClientCertificateKey inRequest:self];
 }
 
 
 - (void)setSR_SSLClientCertificate:(nullable NSData *)SR_SSLClientCertificate {
-    [NSURLProtocol setProperty:[SR_SSLClientCertificate copy] forKey:SRSSLClientCertificatesKey inRequest:self];
+    [NSURLProtocol setProperty: [SR_SSLClientCertificate copy] forKey: SRSSLClientCertificateKey inRequest:self];
+}
+
+- (nullable NSString *)SR_SSLClientCertificatePassword {
+    return [NSURLProtocol propertyForKey: SRSSLClientCertificatePasswordKey inRequest:self];
+}
+
+
+- (void)setSR_SSLClientCertificatePassword:(nullable NSString *)SR_SSLClientCertificatePassword {
+    [NSURLProtocol setProperty:[SR_SSLClientCertificatePassword copy] forKey: SRSSLClientCertificatePasswordKey inRequest:self];
 }
 
 
@@ -62,3 +77,4 @@ static NSString *const SRSSLClientCertificatesKey = @"SocketRocket_SSLClientCert
 @end
 
 NS_ASSUME_NONNULL_END
+

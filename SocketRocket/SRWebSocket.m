@@ -199,6 +199,12 @@ NSString *const SRHTTPResponseErrorKey = @"HTTPResponseStatusCode";
     if (clientCertificate) {
         securityPolicy.SR_SSLClientCertificate = clientCertificate;
     }
+    
+    NSString *clientCertificatePassword = request.SR_SSLClientCertificatePassword;
+    
+    if (clientCertificatePassword) {
+        securityPolicy.SR_SSLClientCertificatePassword = clientCertificatePassword;
+    }
 
     return [self initWithURLRequest:request protocols:protocols securityPolicy:securityPolicy];
 }
