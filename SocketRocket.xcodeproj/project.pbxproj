@@ -101,9 +101,7 @@
 		81C22BF61D1256E1007BFDDF /* SRRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRandom.h; sourceTree = "<group>"; };
 		81C22BF71D1256E1007BFDDF /* SRRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRandom.m; sourceTree = "<group>"; };
 		81C68CD31D2CBE0A00A1D005 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		81C68CDE1D2CBE1900A1D005 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		81C68CF01D2CBE9F00A1D005 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		81C68D061D2CBF6A00A1D005 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/lib/libicucore.A.tbd; sourceTree = DEVELOPER_DIR; };
 		81C68D0D1D2CBFA800A1D005 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libicucore.A.tbd; sourceTree = DEVELOPER_DIR; };
 		81CD05D51CEEC47300497F47 /* NSURLRequest+SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SRWebSocket.h"; sourceTree = "<group>"; };
 		81CD05D61CEEC47300497F47 /* NSURLRequest+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SRWebSocket.m"; sourceTree = "<group>"; };
@@ -111,9 +109,6 @@
 		81CD05FC1CEEC65D00497F47 /* NSRunLoop+SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+SRWebSocket.m"; sourceTree = "<group>"; };
 		81D6474A1D2CA6A100690609 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		81D6474C1D2CA6A100690609 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
-		81D6474D1D2CA6A100690609 /* macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = macOS.xcconfig; sourceTree = "<group>"; };
-		81D6474E1D2CA6A100690609 /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
-		81D6474F1D2CA6A100690609 /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
 		81D647511D2CA6A100690609 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
 		81D647521D2CA6A100690609 /* DynamicFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DynamicFramework.xcconfig; sourceTree = "<group>"; };
 		81D647531D2CA6A100690609 /* LogicTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LogicTests.xcconfig; sourceTree = "<group>"; };
@@ -122,10 +117,6 @@
 		81D647571D2CA6A100690609 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		81D647581D2CA6A100690609 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
 		81D647591D2CA6A100690609 /* SocketRocket-iOS-Dynamic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SocketRocket-iOS-Dynamic.xcconfig"; sourceTree = "<group>"; };
-		81D6475B1D2CA6A100690609 /* SocketRocket-macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SocketRocket-macOS.xcconfig"; sourceTree = "<group>"; };
-		81D6475C1D2CA6A100690609 /* SocketRocket-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SocketRocket-tvOS.xcconfig"; sourceTree = "<group>"; };
-		81D6475D1D2CA6A100690609 /* SocketRocketTests-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SocketRocketTests-iOS.xcconfig"; sourceTree = "<group>"; };
-		81E8A69A1D4C417A00916C7E /* TestChat-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TestChat-iOS.xcconfig"; sourceTree = "<group>"; };
 		F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSIMDHelpers.h; sourceTree = "<group>"; };
 		F5391CBD1D2F4B4700606A81 /* SRSIMDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSIMDHelpers.m; sourceTree = "<group>"; };
 		F61A0DC71625F44D00365EBD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "en.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -307,15 +298,6 @@
 			name = macOS;
 			sourceTree = "<group>";
 		};
-		81C68CFD1D2CBF1800A1D005 /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				81C68CDE1D2CBE1900A1D005 /* CFNetwork.framework */,
-				81C68D061D2CBF6A00A1D005 /* libicucore.A.tbd */,
-			);
-			name = tvOS;
-			sourceTree = "<group>";
-		};
 		81C68CFE1D2CBF2100A1D005 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,10 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				81D647591D2CA6A100690609 /* SocketRocket-iOS-Dynamic.xcconfig */,
-				81D6475B1D2CA6A100690609 /* SocketRocket-macOS.xcconfig */,
-				81D6475C1D2CA6A100690609 /* SocketRocket-tvOS.xcconfig */,
-				81D6475D1D2CA6A100690609 /* SocketRocketTests-iOS.xcconfig */,
-				81E8A69A1D4C417A00916C7E /* TestChat-iOS.xcconfig */,
 				81D647491D2CA6A100690609 /* Shared */,
 			);
 			path = Configurations;
@@ -355,9 +333,6 @@
 			isa = PBXGroup;
 			children = (
 				81D6474C1D2CA6A100690609 /* iOS.xcconfig */,
-				81D6474D1D2CA6A100690609 /* macOS.xcconfig */,
-				81D6474E1D2CA6A100690609 /* tvOS.xcconfig */,
-				81D6474F1D2CA6A100690609 /* watchOS.xcconfig */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -435,7 +410,6 @@
 			children = (
 				81AFCD651D4C431C00B3AFC9 /* libicucore.tbd */,
 				81C68CF41D2CBEBD00A1D005 /* macOS */,
-				81C68CFD1D2CBF1800A1D005 /* tvOS */,
 				81C68CFE1D2CBF2100A1D005 /* iOS */,
 			);
 			name = Frameworks;
